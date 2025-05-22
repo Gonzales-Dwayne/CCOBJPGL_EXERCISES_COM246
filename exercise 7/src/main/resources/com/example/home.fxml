@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.HomeController">
+   <children>
+      <ImageView fitHeight="121.0" fitWidth="101.0" layoutX="3.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Downloads/Martin.png.jfif" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="24.0" prefHeight="51.0" prefWidth="151.0" text="Welcome," textFill="#000000f2">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernamelabel" layoutX="165.0" layoutY="25.0" text="user">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="94.0" text="Username:" />
+      <Label layoutX="35.0" layoutY="128.0" text="Passowrd:" />
+      <TableView fx:id="mytable" editable="true" fixedCellSize="0.0" layoutX="249.0" layoutY="53.0" prefHeight="294.0" prefWidth="329.0">
+        <columns>
+          <TableColumn fx:id="usercolumn" prefWidth="75.0" text="username" />
+          <TableColumn fx:id="passcolumn" prefWidth="75.0" text="password" />
+            <TableColumn fx:id="acccolumn" prefWidth="109.0" text="accountcreated" />
+            <TableColumn fx:id="statscolumn" prefWidth="75.0" text="status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="usertextfield" layoutX="96.0" layoutY="90.0" prefHeight="25.0" prefWidth="138.0" />
+      <PasswordField fx:id="passtextfield" layoutX="96.0" layoutY="124.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="35.0" layoutY="175.0" prefHeight="25.0" prefWidth="53.0" text="Status">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choicebox" layoutX="90.0" layoutY="175.0" prefWidth="150.0" />
+      <Button fx:id="createbutton" layoutX="28.0" layoutY="353.0" mnemonicParsing="false" text="Create" />
+      <Button fx:id="updatebutton" layoutX="88.0" layoutY="353.0" mnemonicParsing="false" text="Update" />
+      <Button fx:id="deletebutton" layoutX="153.0" layoutY="353.0" mnemonicParsing="false" text="Delete" />
+   </children>
+</Pane>
